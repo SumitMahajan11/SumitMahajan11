@@ -1,6 +1,7 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:8E54E9&height=200&section=header&text=Sumit%20Mahajan&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Building%20distributed%20systems%20%26%20ML%20at%20project%20scale&descAlignY=55&descSize=18" />
+# Sumit Mahajan
+### Building distributed systems & ML at project scale
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumit-mahajan-142903324)
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sumitnmahajann11@gmail.com)
