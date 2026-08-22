@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=2F81F7&center=true&vCenter=true&width=600&lines=Building+distributed+systems+%26+ML+at+project+scale;3rd-Year+CSE+%40+PCU+Pune;Solo-shipped+a+live+payment-integrated+platform;Targeting+GSoC+2027+%7C+CNCF+%2F+Kubeflow+%2F+KubeVirt" alt="Typing SVG" />
-
-<br>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:8E54E9&height=200&section=header&text=Sumit%20Mahajan&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Building%20distributed%20systems%20%26%20ML%20at%20project%20scale&descAlignY=55&descSize=18" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sumit-mahajan-142903324)
 [![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sumitnmahajann11@gmail.com)
@@ -17,9 +15,9 @@
 CS undergraduate at **Pimpri Chinchwad University, Pune** (CGPA 8.1/10, graduating Mar 2028). I took a client from zero to a live, payment-integrated e-commerce platform in 5 weeks, solo — and I build systems-heavy, ML-backed projects the rest of the year. Right now I'm splitting time between two active builds and preparing an open-source contribution track for **GSoC 2027**.
 
 ```txt
-current_focus   = ["GSoC 2027 prep (CNCF / Kubeflow / KubeVirt)", "Lumina Clinical — SIH 2026", "Echo — agentic OS layer"]
-oss_runway      = "Aug 2026 → Feb 2027"
-languages       = ["TypeScript", "Python", "Rust", "SQL", "C#"]
+current_focus     = ["GSoC 2027 prep (CNCF / Kubeflow / KubeVirt)", "Lumina Clinical — SIH 2026", "Echo — agentic OS layer"]
+oss_runway        = "Aug 2026 → Feb 2027"
+languages         = ["TypeScript", "Python", "Rust", "SQL", "C#"]
 currently_open_to = ["SWE internships", "OSS collaboration"]
 ```
 
@@ -29,7 +27,7 @@ currently_open_to = ["SWE internships", "OSS collaboration"]
 
 <div align="center">
 
-![TypeScript](https://skillicons.dev/icons?i=ts,js,py,rust,react,nextjs,fastify,django,flask,pytorch,tensorflow,kafka,redis,postgres,prisma,docker,grafana,git,vercel,supabase)
+![Stack](https://skillicons.dev/icons?i=ts,js,py,rust,react,nextjs,fastify,django,flask,pytorch,tensorflow,kafka,redis,postgres,prisma,docker,grafana,git,vercel,supabase)
 
 </div>
 
@@ -80,8 +78,8 @@ Dual-stage pipeline: YOLOv8 localization + EfficientNet-B4/ResNet152 ensemble ac
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SumitMahajan11&show_icons=true&theme=github_dark&hide_border=true&count_private=true" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=SumitMahajan11&theme=github-dark&hide_border=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=SumitMahajan11&show_icons=true&theme=github_dark&hide_border=true" />
+<img height="165" src="https://streak-stats.demolab.com/?user=SumitMahajan11&theme=github-dark&hide_border=true" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=SumitMahajan11&theme=github-compact&hide_border=true" width="100%" />
 
@@ -94,8 +92,8 @@ Dual-stage pipeline: YOLOv8 localization + EfficientNet-B4/ResNet152 ensemble ac
 | | |
 |---|---|
 | **Target orgs** | CNCF · Kubeflow · KubeVirt |
-| **Strongest fit** | Kubeflow Training V2 / gang-scheduling, KServe Models Web App, Kubeflow Docs Agent (RAG) |
-| **Phase (now)** | Git/PR workflow fundamentals → real-org contributions |
+| **Strongest fit** | Kubeflow Training V2 / gang-scheduling · KServe Models Web App · Kubeflow Docs Agent (RAG) |
+| **Phase (now)** | Git/PR fundamentals → real-org contributions |
 | **Timeline** | Org list ~Feb 2027 → Proposal Mar 2027 → Results ~Apr 2027 |
 
 ---
