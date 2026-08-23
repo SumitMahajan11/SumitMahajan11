@@ -84,10 +84,11 @@ Dual-stage pipeline: YOLOv8 localization + EfficientNet-B4/ResNet152 ensemble ac
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=SumitMahajan11&theme=github-compact&hide_border=true" width="100%" />
 
+<br><br>
+
+<img src="https://raw.githubusercontent.com/SumitMahajan11/SumitMahajan11/output/github-contribution-grid-snake-dark.svg" width="100%" alt="GitHub contribution snake animation" />
+
 </div>
-
----
-
 ### 🎯 GSoC 2027 — build in public
 
 | | |
