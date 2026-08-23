@@ -64,7 +64,7 @@ Dual-stage pipeline: YOLOv8 localization + EfficientNet-B4/ResNet152 ensemble ac
 <td width="50%" valign="top">
 
 **♻️ [EcoVision](https://github.com/SumitMahajan11/Waste-Classification-System)** — CV + product
-4-model ensemble (EfficientNet-B0, DenseNet121, MobileNetV2, ResNet50) across 9 waste categories — 94.85% val accuracy on the best model. Confidence-calibrated voting, Grad-CAM explainability, gamified PWA.
+4-model ensemble (EfficientNet-B0, MobileNetV2, DenseNet121, ResNet50) across 9 waste categories — 91.79% val accuracy on the best model (EfficientNet-B0). Confidence-calibrated voting, per-class thresholding, gamified PWA.
 `PyTorch` `OpenCV` `PWA`
 
 </td>
