@@ -12,6 +12,7 @@ jobs:
   generate:
     permissions:
       contents: write
+
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +23,8 @@ jobs:
         with:
           github_user_name: SumitMahajan11
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#22C55E&color_dots=#0D1117,#123524,#166534,#16A34A,#22C55E
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#34D399&color_dots=#0D1117,#123524,#166534,#16A34A,#34D399
+            dist/github-contribution-grid-snake.svg?color_snake=#22c55e&color_dots=#07130d,#0b2e1b,#14532d,#22c55e,#86efac
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#22c55e&color_dots=#050b08,#07130d,#0b2e1b,#16a34a,#86efac
 
       - name: Push output to snake-output branch
         uses: crazy-max/ghaction-github-pages@v4
