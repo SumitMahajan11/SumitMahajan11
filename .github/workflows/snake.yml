@@ -30,7 +30,41 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#39D98A&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
             dist/github-contribution-grid-snake-dark.svg?color_snake=#39D98A&color_dots=#0D1117,#0E4429,#006D32,#26A641,#39D353
 
-      - name: Push output to snake-output branch
+      - name: Slow snake animation by 20%
+        shell: python
+        run: |
+          import re
+          from pathlib import Path
+
+          files = [
+              Path("dist/github-contribution-grid-snake.svg"),
+              Path("dist/github-contribution-grid-snake-dark.svg"),
+          ]
+
+          for file in files:
+              content = file.read_text(encoding="utf-8")
+
+              def slow_down(match):
+                  duration = float(match.group(1))
+                  new_duration = duration * 1.25
+                  return f"animation: none linear {new_duration:.2f}ms infinite"
+
+              updated = re.sub(
+                  r"animation:\s*none\s+linear\s+([0-9.]+)ms\s+infinite",
+                  slow_down,
+                  content
+              )
+
+              if updated == content:
+                  raise RuntimeError(
+                      f"Could not find animation duration in {file}"
+                  )
+
+              file.write_text(updated, encoding="utf-8")
+
+              print(f"Updated: {file}")
+
+      - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
