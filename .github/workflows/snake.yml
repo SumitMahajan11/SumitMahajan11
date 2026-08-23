@@ -23,8 +23,8 @@ jobs:
         with:
           github_user_name: SumitMahajan11
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#22c55e&color_dots=#07130d,#0b2e1b,#14532d,#22c55e,#86efac
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#22c55e&color_dots=#050b08,#07130d,#0b2e1b,#16a34a,#86efac
+            dist/github-contribution-grid-snake.svg?color_snake=#39FF88&color_dots=#07130D,#0B3D24,#087F5B,#20C997,#8CE99A
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#39FF88&color_dots=#050B08,#0B3D24,#087F5B,#20C997,#8CE99A
 
       - name: Push output to snake-output branch
         uses: crazy-max/ghaction-github-pages@v4
