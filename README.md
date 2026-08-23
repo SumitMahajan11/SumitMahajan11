@@ -79,7 +79,6 @@ Dual-stage pipeline: YOLOv8 localization + EfficientNet-B4/ResNet152 ensemble ac
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SumitMahajan11&show_icons=true&theme=github_dark&hide_border=true" />
 <img height="165" src="https://streak-stats.demolab.com/?user=SumitMahajan11&theme=github-dark&hide_border=true" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=SumitMahajan11&theme=github-compact&hide_border=true" width="100%" />
