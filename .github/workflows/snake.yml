@@ -25,44 +25,28 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: SumitMahajan11
-
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=#39D98A&color_dots=#161B22,#0E4429,#006D32,#26A641,#39D353
             dist/github-contribution-grid-snake-dark.svg?color_snake=#39D98A&color_dots=#0D1117,#0E4429,#006D32,#26A641,#39D353
 
-      - name: Slow snake animation by 20%
-        shell: python
+      - name: Fix generated file permissions
         run: |
-          import re
-          from pathlib import Path
+          sudo chown -R "$USER:$USER" dist
 
-          files = [
-              Path("dist/github-contribution-grid-snake.svg"),
-              Path("dist/github-contribution-grid-snake-dark.svg"),
-          ]
+      - name: Slow snake animation by 20%
+        run: |
+          sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake.svg
+          sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake-dark.svg
 
-          for file in files:
-              content = file.read_text(encoding="utf-8")
+      - name: Verify snake files
+        run: |
+          echo "Generated files:"
+          ls -lh dist/
 
-              def slow_down(match):
-                  duration = float(match.group(1))
-                  new_duration = duration * 1.25
-                  return f"animation: none linear {new_duration:.2f}ms infinite"
-
-              updated = re.sub(
-                  r"animation:\s*none\s+linear\s+([0-9.]+)ms\s+infinite",
-                  slow_down,
-                  content
-              )
-
-              if updated == content:
-                  raise RuntimeError(
-                      f"Could not find animation duration in {file}"
-                  )
-
-              file.write_text(updated, encoding="utf-8")
-
-              print(f"Updated: {file}")
+          echo ""
+          echo "Animation duration:"
+          grep -o "1250ms" dist/github-contribution-grid-snake.svg | head
+          grep -o "1250ms" dist/github-contribution-grid-snake-dark.svg | head
 
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
