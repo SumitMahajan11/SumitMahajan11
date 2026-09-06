@@ -71,9 +71,15 @@ Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking 
 </tr>
 </table>
 
-**Also shipped:** [Soybean Leaf Disease Classifier](https://github.com/SumitMahajan11/soyabean-leaf-disease-classifier) — YOLOv8 + EfficientNet-B4/ResNet152 ensemble, 92.96% test accuracy / 92.29% F1 · [EcoVision](https://github.com/SumitMahajan11/Waste-Classification-System) — 4-model ensemble waste classifier, 91.79% val accuracy
+#### All projects
 
-> Also currently building **Lumina Clinical** (offline ML triage app for ASHA health workers, SIH 2026) and **Echo** (a locally-run agentic OS layer with voice/vision perception — private repo, in active development).
+| Project | What it is | Status |
+|---|---|---|
+| [ReelClaim](https://github.com/SumitMahajan11/TODO-add-slug) | Audits promotional reel/ad claims against actual website content — Gemini extraction + crawler + 3-pass trust-score engine | 96% accuracy on a 50-case labeled benchmark; auth, persistence, BYOK all shipped — not yet pushed to origin |
+| Lumina Clinical (SIH 2026) | Offline-capable maternal triage app for ASHA health workers | Soft-voting ensemble (XGBoost+RF+LightGBM), 85.51% CV accuracy / 91.53% high-risk recall; separate fetal classifier at 93.66% |
+| Echo | Locally-run agentic OS layer — voice/vision perception, local STT/TTS, vector memory | Private repo, active development |
+| [Soybean Leaf Disease Classifier](https://github.com/SumitMahajan11/soyabean-leaf-disease-classifier) | YOLOv8 + EfficientNet-B4/ResNet152 ensemble, 17 disease classes | 92.96% test accuracy / 92.29% F1 |
+| [EcoVision](https://github.com/SumitMahajan11/Waste-Classification-System) | 4-model ensemble waste classifier, 9 categories | 91.79% val accuracy (best model) |
 
 ---
 
