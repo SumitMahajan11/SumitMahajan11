@@ -117,5 +117,5 @@ Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking 
 ---
 
 <div align="center">
-<sub>Building in public. Reach out if you're working on distributed systems, ML infra, or open source.</sub>
+<sub>Building in public. Reach out if you're working on distributed systems, ML infrastrucutre, or open source.</sub>
 </div>
