@@ -32,11 +32,12 @@ jobs:
       - name: Fix generated file permissions
         run: |
           sudo chown -R "$USER:$USER" dist
+          sudo chmod -R u+rwX dist
 
       - name: Slow snake animation by 20%
         run: |
-          sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake.svg
-          sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake-dark.svg
+          sudo sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake.svg
+          sudo sed -i 's/1000ms/1250ms/g' dist/github-contribution-grid-snake-dark.svg
 
       - name: Verify snake files
         run: |
