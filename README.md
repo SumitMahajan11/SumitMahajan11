@@ -88,7 +88,7 @@ Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking 
 
 <div align="center">
 
-<img height="165" src="https://streak-stats.demolab.com/?user=SumitMahajan11&theme=github-dark&hide_border=true" />
+<img height="165" src="https://github-readme-streak-stats-brown-xi.vercel.app/?user=SumitMahajan11&theme=github-dark&hide_border=true" />
 
 <img src="https://github-readme-activity-graph-sooty.vercel.app/graph?username=SumitMahajan11&theme=github-compact&hide_border=true" width="100%" />
 
