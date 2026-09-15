@@ -16,7 +16,7 @@
 CS undergraduate at **Pimpri Chinchwad University, Pune** (CGPA 8.1/10, graduating Mar 2028). I took a client from zero to a live, payment-integrated e-commerce platform in 5 weeks, solo — and I build systems-heavy, formal-methods-backed projects the rest of the year. Right now I'm splitting time between two active builds and preparing an open-source contribution track for **GSoC 2027**.
 
 \`\`\`txt
-current_focus     = ["GSoC 2027 prep (CNCF / Kubeflow / KubeVirt)", "Lumina Clinical — SIH 2026", "Echo — agentic OS layer"]
+current_focus     = ["GSoC 2027 prep (CNCF / Kubeflow / KubeVirt)", "Ratify — verified Raft consensus", "iac-verifier — Z3 SMT reachability"]
 oss_runway        = "Aug 2026 → Feb 2027"
 languages         = ["TypeScript", "Python", "Rust", "SQL", "C#"]
 currently_open_to = ["SWE internships", "OSS collaboration"]
@@ -42,14 +42,14 @@ currently_open_to = ["SWE internships", "OSS collaboration"]
 
 **🔗 [Ratify](https://github.com/SumitMahajan11/Ratify)** — distributed systems / formal verification
 Raft consensus implemented from scratch with Jepsen-style linearizability verification. TLA+ model-checked with zero invariant violations across 5 safety properties. Reproduces real historical Raft bugs; custom linearizability checker at 100% Porcupine parity plus a negative-case proof; RL/bandit fault-injection fuzzer driven by real cluster telemetry, not a lookup table.
-\`Rust\` \`Tokio\` \`TLA+/TLC\` \`tonic\`
+`Rust` `Tokio` `TLA+/TLC` `tonic`
 
 </td>
 <td width="50%" valign="top">
 
-**🔒 [z3-iac-verifier](https://github.com/SumitMahajan11/TODO-add-slug)** — formal verification / infra security
+**🔒 [iac-verifier](https://github.com/SumitMahajan11/iac-verifier)** — formal verification / infra security
 Terraform/K8s config verifier using Z3 SMT solving. 1.0 precision/recall across 27 ground-truth cases (AWS + Azure). Proves cross-account privilege-escalation *reachability* — not single-rule lint matches — with UNSAT-core minimal-fix generation and formal proof certificates. Live K8s ValidatingAdmissionWebhook verified against a real kind cluster.
-\`Python\` \`Z3 SMT\` \`python-hcl2\`
+`Python` `Z3 SMT` `python-hcl2`
 
 </td>
 </tr>
@@ -58,14 +58,14 @@ Terraform/K8s config verifier using Z3 SMT solving. 1.0 precision/recall across 
 
 **🌐 [AutoCure](https://autocure.in)** — live client product
 Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking across 5 categories. Live Razorpay payments (KYC'd), 16 production issues closed through client handoff.
-\`Next.js\` \`TypeScript\` \`Supabase\` \`Razorpay\`
+`Next.js` `TypeScript` `Supabase` `Razorpay`
 
 </td>
 <td width="50%" valign="top">
 
 **⚙️ [Edge-Cloud Orchestrator](https://github.com/SumitMahajan11/edge-cloud-orchestrator)** — distributed systems
 8-service platform: Kafka + Saga/Outbox patterns for cross-store consistency, backed by a 546-test suite. ML scheduler (TensorFlow.js) hitting 508ms P99 across 1,000 simulated placements. Rust edge agent on Tokio.
-\`Kafka\` \`Rust\` \`TensorFlow.js\` \`PostgreSQL\`
+`Kafka` `Rust` `TensorFlow.js` `PostgreSQL`
 
 </td>
 </tr>
@@ -75,8 +75,9 @@ Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking 
 
 | Project | What it is | Status |
 |---|---|---|
-| [Instafake](https://github.com/SumitMahajan11/TODO-add-slug) | Audits promotional reel/ad claims against actual website content — Gemini extraction + crawler + 3-pass trust-score engine | 96% accuracy on a 50-case labeled benchmark; auth, persistence, BYOK all shipped — not yet pushed to origin |
-| Lumina Clinical (SIH 2026) | Offline-capable maternal triage app for ASHA health workers | Soft-voting ensemble (XGBoost+RF+LightGBM), 85.51% CV accuracy / 91.53% high-risk recall; separate fetal classifier at 93.66% |
+| [Instafake](https://github.com/SumitMahajan11/ReelClaim) | Audits promotional reel/ad claims against actual website content — Gemini extraction + crawler + 3-pass trust-score engine | 96% accuracy on a 50-case labeled benchmark; auth, persistence, BYOK all shipped |
+| [Lumina Clinical](https://github.com/SumitMahajan11/Aasha) (SIH 2026) | Offline-capable maternal triage app for ASHA health workers | Soft-voting ensemble (XGBoost+RF+LightGBM), 85.51% CV accuracy / 91.53% high-risk recall; separate fetal classifier at 93.66% |
+| [Daily Dive](https://github.com/SumitMahajan11/Daily-Dive) | Micro-learning roulette PWA — spaced repetition across 500+ curated topics | Live at daily-dive.vercel.app; frontend redesign in progress |
 | Echo | Locally-run agentic OS layer — voice/vision perception, local STT/TTS, vector memory | Private repo, active development |
 | [Soybean Leaf Disease Classifier](https://github.com/SumitMahajan11/soyabean-leaf-disease-classifier) | YOLOv8 + EfficientNet-B4/ResNet152 ensemble, 17 disease classes | 92.96% test accuracy / 92.29% F1 |
 | [EcoVision](https://github.com/SumitMahajan11/Waste-Classification-System) | 4-model ensemble waste classifier, 9 categories | 91.79% val accuracy (best model) |
@@ -97,25 +98,18 @@ Solo-built e-commerce platform in 5 weeks: auth, cart, wishlist, order-tracking 
 
 </div>
 
-### 🎯 GSoC 2027 — build in public
-
-| | |
-|---|---|
-| **Target orgs** | CNCF · Kubeflow · KubeVirt |
-| **Strongest fit** | Kubeflow Training V2 / gang-scheduling · KServe Models Web App · Kubeflow Docs Agent (RAG) |
-| **Phase (now)** | Git/PR fundamentals → real-org contributions |
-| **Timeline** | Org list ~Feb 2027 → Proposal Mar 2027 → Results ~Apr 2027 |
+**GSoC 2027:** targeting CNCF / Kubeflow / KubeVirt (Training V2 gang-scheduling, KServe Models Web App, Kubeflow Docs Agent). Currently in Git/PR fundamentals phase — org list ~Feb 2027, proposal Mar 2027.
 
 ---
 
 ### 📜 Certifications
 
-\`Red Hat RH124 & RH134\` · \`Red Hat OpenShift (DO101)\` · \`Meta: Django Web Framework\` · \`Meta: Version Control\` · \`Codio: Intro to Operating Systems\`
+`Red Hat RH124 & RH134` · `Red Hat OpenShift (DO101)`
 
 **Verified (HackerRank):** Python ★★★★★ · Problem Solving ★★★★
 
 ---
 
 <div align="center">
-<sub>Building in public. Reach out if you're working on distributed systems, ML infrastrucutre, or open source.</sub>
+<sub>Building in public. Reach out if you're working on distributed systems, ML infrastructure, or open source.</sub>
 </div>
